@@ -15,11 +15,12 @@
         <div class="image">
 
             <div class="container">
+                <button class="menu__button js-menu__button">
+                    <span class="menu__button-label"></span>
+                </button>
                 <img src="svg/noemi-logo.svg" class="header-logo" alt>
                 <nav class="menu">
-                    <button class="menu__button js-menu__button">
-                        <span class="menu__button-label"></span>
-                    </button>
+
                     <ul class="menu__item">
                         <li class="menu__items"><a class="menu__link" href="#0">Главная</a></li>
                         <li class="menu__items"><a class="menu__link" href="#0">Посты</a></li>
@@ -40,18 +41,20 @@
                 <label class="label__item" for="period">Как часто вы заходите на сайт?</label>
                 <select class="select" id="period" name="user__period">
                     <option class="backtext" selected value="every__day">Почти каждый день</option>
-                    <option value="week">Раз в неделю</option>
+                    <option value="oneday">Раз в несколько дней</option>
+                    <option value="week">Раз в несколько недель</option>
+                    <option value="year">Несколько раз в год</option>
                 </select>
 
                 <label class="label__item">Вы подписаны на рассылку?</label>
                 <div class="radio__buttons">
                     <label class="input__radio__group">
                         <input type="radio" name="answer" class="input__radio__answer" checked>
-                        <span class="radio__answer">Да</span>
+                        <span class="radio__answer__text">Да</span>
                     </label>
                     <label class="input__radio__group">
                         <input type="radio" class="input__radio__answer" name="answer">
-                        <span class="radio__answer">Нет</span>
+                        <span class="radio__answer__text">Нет</span>
                     </label>
                 </div>
                 <label class="label__item">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
@@ -63,7 +66,7 @@
         <section class="now__trend">
             <h3 class="now__trend__title">Сейчас в тренде</h3>
             <div class="cards__trend">
-                <article class="card__trend__box__first">
+                <article class="card__trend card__trend__box__first">
                     <div class="trend__content__box">
                         <ul class="now__trend__tags__list">
                             <li class="now__trend__tags__item">
@@ -309,9 +312,11 @@
         </aside>
     </div>
 
-    <div class="container">
-        <section class="goods">
-            <h3 class="goods__title">Наши изделия</h3>
+    
+    <section class="goods">
+
+        <h3 class="goods__title">Наши изделия</h3>
+        <div class="container">
             <div class="goods__list">
                 <div class="goods__item">
                     <div class="goods__image__first"></div>
@@ -343,12 +348,12 @@
                             </button>
                         </div>
                     </div>
-                    </div>
+                </div>
                 <div class="goods__item">
                     <div class="goods__image__third"></div>
                     <div class="good__item__content">
                         <h4 class="goods__item__title">Шестиугольная рамка</h4>
-                        <p>Необычная рамка для украшения дома из видео <a href="#" class="goods__item__link">«Как сделать рамку из подручных средств за 30 минут»</a> </p>
+                        <p>Необычная рамка для украшения дома из видео <a href="#" class="p__bold goods__item__link">«Как сделать рамку из подручных средств за 30 минут»</a> </p>
                         <div class="specific__cards">
                             <ul class="specific__cards__list">
                                 <li class="old__price">500 Р</li>
@@ -359,10 +364,11 @@
                             </button>
                         </div>
                     </div>
-                    </div>
                 </div>
-        </section>
-    </div>
+            </div>
+        </div>
+    </section>
+    
 
 
     <footer>
