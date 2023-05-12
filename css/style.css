@@ -1530,7 +1530,7 @@ footer .container {
         margin-bottom: 27px;
         width: 100%;
     }
-    .goods__item:nth-child(3){
+    .goods__item:nth-child(n+2){
         margin-top: 25px;
     }
     .goods__image__first{
